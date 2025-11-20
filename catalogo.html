@@ -7,29 +7,30 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/cardProduto.css">
 </head>
 
 <body>
     <header class="header">
         <div class="left-header">
-            <a href="./sobreNos.html">
+            <a href="./index.html">
                 <button class="header-buttons">Sobre nós</button>
             </a>
             <a href="./catalogo.html">
                 <button class="header-buttons">Veja nossos produtos</button>
             </a>
-            <button class="header-buttons">
-                Entre em contato
-            </button>
         </div>
         <div id="right-header" class="right-header">
         </div>
     </header>
-    <main>
-        <div class="catalogoCardContainer">
-
-        </div>
+    <main class="catalogo-main">
+        <h1 class="catalogo-titulo">Nosso Catálogo</h1>
+        <p class="catalogo-subtitulo">Explore nossa coleção de canecas personalizadas.</p>
+        <!-- O conteúdo do grid será preenchido dinamicamente pelo JavaScript -->
+        <div class="catalogoGridContainer"></div>
     </main>
+
+    <script src="./js/catalogo.js"></script>
 </body>
 
 </html>
