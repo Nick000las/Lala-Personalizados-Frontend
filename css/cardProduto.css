@@ -1,0 +1,85 @@
+.catalogo-main {
+  padding: 60px 20px;
+  background-color: #f2f4eb;
+  text-align: center;
+}
+
+.catalogo-titulo {
+  font-size: 48px;
+  font-weight: 700;
+  color: #2a2a2a;
+  margin-bottom: 10px;
+}
+
+.catalogo-subtitulo {
+  font-size: 18px;
+  color: #556;
+  margin-bottom: 50px;
+}
+
+.catalogoGridContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.CatalogoImageContainer {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.catalogoCardContainer {
+  background: #fff;
+  width: 320px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalogoCardContainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 22px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  padding: 15px;
+  text-align: left;
+}
+
+.card-content h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2a2a2a;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 20px;
+  flex-grow: 1; /* Faz a descrição ocupar o espaço disponível */
+}
+
+.card-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(90deg, #43c486, #355ea8);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+.card-button:hover {
+  filter: brightness(1.1);
+}
+}
