@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Painel Admin</title>
+
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+    <header>
+        <button id="btnTemplates" class="active" onclick="mostrarAba('templates')">Templates</button>
+        <button id="btnPedidos" onclick="mostrarAba('pedidos')">Pedidos</button>
+    </header>
+
+    <div class="container">
+
+        <section id="abaTemplates">
+            <h1 class="titulo">Templates de Canecas</h1>
+            <div id="listaTemplates" class="catalogoGridContainer"></div>
+        </section>
+
+        <section id="abaPedidos" style="display:none;">
+            <h1 class="titulo">Pedidos</h1>
+            <div id="listaPedidos" class="pedidosContainer"></div>
+        </section>
+
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>

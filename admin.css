@@ -1,0 +1,122 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: roboto, sans-serif;
+}
+
+body {
+    background-color: #f2f4eb;
+}
+
+/* Header */
+header {
+    background-color: #355ea8;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+header button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.8;
+    padding-bottom: 6px;
+}
+
+header button.active {
+    opacity: 1;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+
+/* Título */
+.titulo {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #2a2a2a;
+    text-align: center;
+}
+
+/* Contêiner principal */
+.container {
+    padding: 40px;
+}
+
+/* Grid Templates */
+.catalogoGridContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.catalogoCardContainer {
+    background: #fff;
+    width: 320px;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+    transition: 0.3s ease;
+}
+
+.catalogoCardContainer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.2);
+}
+
+.CatalogoImageContainer {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    margin-bottom: 6px;
+}
+
+/* PEDIDOS */
+.pedidosContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.pedidoCard {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+}
+
+.pedidoCard h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.pedidoCard p {
+    margin-bottom: 6px;
+    color: #444;
+}
+
+/* Imagem do pedido */
+.imagemPedido {
+    width: 200px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
