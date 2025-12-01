@@ -1,0 +1,167 @@
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: roboto, sans-serif;
+}
+
+body {
+  background-color: #f2f4eb;
+}
+
+/* Header */
+header {
+  background-color: #355ea8;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+header button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0.8;
+  padding-bottom: 6px;
+}
+
+header button.active {
+  opacity: 1;
+  font-weight: bold;
+  border-bottom: 2px solid #fff;
+}
+
+/* Título */
+.titulo {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #2a2a2a;
+  text-align: center;
+}
+
+/* Contêiner principal */
+.container {
+  padding: 40px;
+}
+
+/* Grid Templates */
+.catalogoGridContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.catalogoCardContainer {
+  background: #fff;
+  width: 320px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease;
+}
+
+.catalogoCardContainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.2);
+}
+
+.CatalogoImageContainer {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  margin-bottom: 6px;
+}
+
+/* PEDIDOS */
+.pedidosContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.pedidoCard {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+}
+
+.pedidoCard h3 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.pedidoCard p {
+  margin-bottom: 6px;
+  color: #444;
+}
+.pedidoCard .botoes-acao {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.pedidoCard .botoes-acao button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+.btn-atualizar {
+  background-color: #f0ad4e;
+  color: white;
+}
+.btn-atualizar:hover {
+  background-color: #ec971f;
+}
+
+.btn-deletar {
+  background-color: #d9534f;
+  color: white;
+}
+.btn-deletar:hover {
+  background-color: #c9302c;
+}
+
+/* Estilos para o formulário */
+#formCriarPedido input,
+#formCriarPedido textarea {
+  display: block;
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+#formCriarPedido textarea {
+  min-height: 80px;
+  resize: vertical;
+  font-family: roboto, sans-serif;
+}
+
+/* Imagem do pedido */
+.imagemPedido {
+  width: 200px;
+  border-radius: 8px;
+  margin-top: 10px;
+}

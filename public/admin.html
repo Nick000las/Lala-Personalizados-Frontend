@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Lala Personalizados</title>
+    <link rel="stylesheet" href="./css/admin.css">
+</head>
+
+<body>
+    <header>
+        <button id="btnTemplates" onclick="mostrarAba('templates')">Templates</button>
+        <button id="btnPedidos" onclick="mostrarAba('pedidos')">Pedidos</button>
+        <button id="btnCriarPedido" onclick="mostrarAba('criar')">Criar Pedido</button>
+        <button id="btnLogout" onclick="logout()">Logout</button>
+    </header>
+
+    <div class="container">
+        <!-- Aba de Templates -->
+        <div id="abaTemplates">
+            <h1 class="titulo">Templates Disponíveis</h1>
+            <div id="listaTemplates" class="catalogoGridContainer">
+                <!-- Templates serão carregados aqui -->
+            </div>
+        </div>
+
+        <!-- Aba de Pedidos -->
+        <div id="abaPedidos" style="display: none;">
+            <h1 class="titulo">Pedidos Recebidos</h1>
+            <div id="listaPedidos" class="pedidosContainer">
+                <!-- Pedidos serão carregados aqui -->
+            </div>
+        </div>
+
+        <!-- Aba de Criar Pedido -->
+        <div id="abaCriarPedido" style="display: none;">
+            <h1 class="titulo">Criar Novo Pedido</h1>
+            <form id="formCriarPedido" class="pedidoCard">
+                <h3>Dados do Pedido</h3>
+                <input type="text" name="nome_cliente" placeholder="Nome do cliente" required>
+                <input type="email" name="email" placeholder="Email do cliente" required>
+                <input type="tel" name="telefone" placeholder="Telefone do cliente" required>
+                <textarea name="endereco" placeholder="Endereço de entrega" required></textarea>
+                <input type="text" name="template_id" placeholder="ID do Template (opcional)">
+                <input type="number" name="quantidade" placeholder="Quantidade" required min="1">
+                <input type="text" name="cor_da_caneca" placeholder="Cor da caneca" required>
+                <textarea name="fala_personalizada" placeholder="Fala personalizada (opcional)"></textarea>
+                <button type="submit" class="form-button">Criar Pedido</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="./js/admin.js"></script>
+</body>
+
+</html>

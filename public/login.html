@@ -1,0 +1,16 @@
+<form id="adminLoginForm">
+  <input type="password" id="senha" placeholder="Senha do admin">
+  <button type="submit">Entrar</button>
+</form>
+
+<script>
+  document.getElementById("adminLoginForm").addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const senhaDigitada = document.getElementById("senha").value;
+
+    localStorage.setItem("adminKey", senhaDigitada);
+
+    window.location.href = "admin.html";
+  });
+</script>

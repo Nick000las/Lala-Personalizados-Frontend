@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/cardProduto.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="left-header">
+            <a href="./index.html">
+                <button class="header-buttons">Sobre nós</button>
+            </a>
+            <a href="./catalogo.html">
+                <button class="header-buttons">Veja nossos produtos</button>
+            </a>
+        </div>
+        <div id="right-header" class="right-header">
+        </div>
+    </header>
+    <main class="catalogo-main">
+        <h1 class="catalogo-titulo">Nosso Catálogo</h1>
+        <p class="catalogo-subtitulo">Explore nossa coleção de canecas personalizadas.</p>
+        <div class="catalogoGridContainer"></div>
+
+<div id="popupOverlay" class="popup-overlay"></div>
+
+<!-- POPUP -->
+    <div id="pedidoPopup" class="popup">
+    <button id="popupClose" class="popup-close">×</button>
+
+    <h2 id="popupProdutoNome">Produto Selecionado</h2>
+
+    <form id="pedidoForm">
+        <!-- ID do template é colocado automaticamente -->
+        <input type="hidden" id="template_id_input" name="template_id">
+
+        <label>Nome</label>
+        <input type="text" name="nome_cliente" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Telefone</label>
+        <input type="text" name="telefone" required>
+
+        <label>Endereço</label>
+        <input type="text" name="endereco" required>
+
+        <label>Quantidade</label>
+        <input type="number" name="quantidade" min="1" value="1" required>
+
+        <label>Cor da caneca</label>
+        <select name="cor_da_caneca">
+        <option value="Branca">Branca</option>
+        <option value="Preta">Preta</option>
+        <option value="Colorida">Colorida</option>
+        </select>
+
+        <label>Fala personalizada (opcional)</label>
+        <input type="text" name="fala_personalizada">
+
+        <button type="submit" class="popup-submit">Finalizar Pedido</button>
+    </form>
+    </div>
+
+</main>
+    
+
+    <script src="./js/catalogo.js"></script>
+</body>
+
+</html>
