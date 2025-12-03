@@ -1,6 +1,11 @@
-<form id="adminLoginForm">
+ <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/login.css">
+    
+<form id="adminLoginForm" class="box">
+  <h2>Login</h2>
   <input type="password" id="senha" placeholder="Senha do admin">
   <button type="submit">Entrar</button>
+  <button type="button" onclick="window.location.href='index.html'">Voltar</button>
 </form>
 
 <script>
@@ -14,3 +19,4 @@
     window.location.href = "admin.html";
   });
 </script>
+
