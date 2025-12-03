@@ -202,7 +202,7 @@ window.onload = () => {
     window.location.href = "login.html";
     return;
   }
-
+  console.log("debug3");
   mostrarAba("pedidos");
   carregarPedidos();
 
