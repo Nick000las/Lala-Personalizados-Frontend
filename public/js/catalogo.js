@@ -1,3 +1,4 @@
+import { BACKEND_URL } from "./admin";
 document.addEventListener("DOMContentLoaded", () => {
   // ============================
   // LISTA DE PRODUTOS
@@ -157,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
       };
 
       try {
-        const resposta = await fetch("http://localhost:3000/pedidos", {
+        const resposta = await fetch(`${BACKEND_URL}/pedidos`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(dados),
