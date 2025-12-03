@@ -17,10 +17,13 @@ function mostrarAba(aba) {
   const btnTemplates = document.getElementById("btnTemplates");
   const btnPedidos = document.getElementById("btnPedidos");
   const btnCriarPedido = document.getElementById("btnCriarPedido");
+  console.log("debug2");
 
   abaTemplates.style.display = aba === "templates" ? "block" : "none";
   abaPedidos.style.display = aba === "pedidos" ? "block" : "none";
   abaCriarPedido.style.display = aba === "criar" ? "block" : "none";
+
+  console.log("debug2");
 
   btnTemplates.classList.toggle("active", aba === "templates");
   btnPedidos.classList.toggle("active", aba === "pedidos");
