@@ -1,4 +1,4 @@
-export const BACKEND_URL = "https://lala-personalizados-backend.vercel.app";
+const BACKEND_URL = "https://lala-personalizados-backend.vercel.app";
 
 function verificarAcesso(resposta) {
   if (resposta.status === 401) {
