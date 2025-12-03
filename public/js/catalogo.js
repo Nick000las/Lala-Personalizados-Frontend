@@ -1,4 +1,4 @@
-import { BACKEND_URL } from "./admin";
+const BACKEND_URL ="https://lala-personalizados-backend.vercel.app";
 document.addEventListener("DOMContentLoaded", () => {
   // ============================
   // LISTA DE PRODUTOS
