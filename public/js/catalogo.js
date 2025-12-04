@@ -170,9 +170,16 @@ document.addEventListener("DOMContentLoaded", () => {
           return;
         }
 
-        alert("Pedido criado com sucesso!");
         form.reset();
         fecharPopup();
+
+        // MINI POPUP (toast)
+        const toast = document.getElementById("toast");
+        toast.classList.add("show");
+
+        setTimeout(() => {
+          toast.classList.remove("show");
+        }, 3500);
       } catch (error) {
         alert("Erro inesperado: " + error.message);
       }
